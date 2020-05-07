@@ -1,0 +1,101 @@
+JFDML JFormDesigner: "7.0.1.0.272" Java: "1.8.0_152-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+			"$layoutConstraints": "fill,insets 5,hidemode 3,gap 2 4"
+			"$columnConstraints": "[fill][grow,fill]"
+			"$rowConstraints": "[][grow]"
+		} ) {
+			name: "this"
+			"minimumSize": new java.awt.Dimension( 550, 400 )
+			"preferredSize": new java.awt.Dimension( 550, 400 )
+			"focusable": false
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+				"$layoutConstraints": "fill,hidemode 3"
+				"$columnConstraints": "[fill][50!,center]"
+				"$rowConstraints": "[]"
+			} ) {
+				name: "panel1"
+				"focusable": false
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "mInput"
+					"font": new java.awt.Font( "Microsoft YaHei UI", 0, 15 )
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 0 0"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "mClear"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/clear.png" )
+					"focusable": false
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 1 0,height 45%"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "mSetting"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/setting.png" )
+					"focusable": false
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 1 0,height 45%"
+				} )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 0 0 2 1"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+				"$layoutConstraints": "fill,hidemode 3,gap 2 4"
+				"$columnConstraints": "1%[18.5%]1%[78.5%]1%"
+				"$rowConstraints": "[]"
+			} ) {
+				name: "panel2"
+				"focusable": false
+				"enabled": false
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane1"
+					add( new FormComponent( "javax.swing.JList" ) {
+						name: "mResList"
+						"focusable": false
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 15 )
+					} )
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 0 0,grow"
+				} )
+				add( new FormContainer( "javax.swing.JLayeredPane", new FormLayoutManager( class javax.swing.JLayeredPane ) ) {
+					name: "mLayerPane"
+					"enabled": false
+					"focusable": false
+					"requestFocusEnabled": false
+					"verifyInputWhenFocusTarget": false
+					"font": new java.awt.Font( "Microsoft YaHei UI", 0, 15 )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "mDetailPane"
+						"focusable": false
+						add( new FormComponent( "javax.swing.JTextArea" ) {
+							name: "mResDetail"
+							"editable": false
+							"font": new java.awt.Font( "Monospaced", 0, 15 )
+						} )
+					}, new FormLayoutConstraints( null ) {
+						"x": 0
+						"y": 0
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "mEdit"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/modify.png" )
+					}, new FormLayoutConstraints( null ) {
+						"x": 260
+						"y": 210
+						"layer": 100
+					} )
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 1 0,grow"
+				} )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 0 1 2 1,grow"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 400, 300 )
+		} )
+	}
+}

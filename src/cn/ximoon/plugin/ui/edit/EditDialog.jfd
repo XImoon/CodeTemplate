@@ -1,0 +1,108 @@
+JFDML JFormDesigner: "7.0.1.0.272" Java: "1.8.0_152-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			"$sizePolicy": 2
+			"resizable": false
+			"minimumSize": new java.awt.Dimension( 550, 600 )
+			"name": "EditDialog"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) {
+				"hgap": 4
+			} ) {
+				name: "dialogPane"
+				"preferredSize": new java.awt.Dimension( 550, 600 )
+				"minimumSize": new java.awt.Dimension( 129, 600 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.swingx.VerticalLayout ) {
+					"gap": 8
+				} ) {
+					name: "contentPanel"
+					"border": new javax.swing.border.EmptyBorder( 5, 5, 5, 0 )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label1"
+						"text": "关键词汇："
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "mKey"
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label2"
+						"text": "代码描述："
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane1"
+						add( new FormComponent( "javax.swing.JTextArea" ) {
+							name: "mDescription"
+							"rows": 2
+							"font": new java.awt.Font( "Monospaced", 0, 16 )
+						} )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label3"
+						"text": "替换参数："
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "mParam"
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label5"
+						"text": "代码标签："
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "mTag"
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label4"
+						"text": "完整代码："
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "North"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+					"$layoutConstraints": "fill,hidemode 3"
+					"$columnConstraints": "[fill][fill]"
+					"$rowConstraints": "[]"
+				} ) {
+					name: "panel1"
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "mCancel"
+						"text": "取消"
+						"actionCommand": "cancel"
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 0"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "mSave"
+						"text": "保存"
+						"actionCommand": "save"
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 1 0"
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "South"
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane2"
+					"border": new javax.swing.border.EmptyBorder( 0, 5, 5, 5 )
+					add( new FormComponent( "javax.swing.JTextArea" ) {
+						name: "mDetail"
+						"rows": 15
+						"font": new java.awt.Font( "Monospaced", 0, 16 )
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 550, 560 )
+		} )
+	}
+}
